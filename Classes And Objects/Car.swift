@@ -18,4 +18,15 @@ class Car{
     var color = "Blue"
     var numberOfSeats = 5
     var typeOfCar : CarType = .Coupe
+    
+    //designated initializer i.e. default constructor
+    init() {
+        
+    }
+    
+    //convenience initializer
+    convenience init (customerChosenColor : String){
+        self.init()
+        color = customerChosenColor
+    }
 }
