@@ -11,4 +11,16 @@ import Foundation
 //making use of inheritance
 class SelfDrivingCar : Car{
     
+    var destination : String?
+    
+    override func drive() {
+        super.drive()
+        
+        //making use of optional binding
+        
+        if let userSetDestination = destination{
+            print("driving towards \(userSetDestination)")
+        }
+        
+    }
 }

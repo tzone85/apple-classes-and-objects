@@ -8,11 +8,9 @@
 
 import Foundation
 
-let myCar = Car(customerChosenColor: "White")
-let richThandoCar = Car(customerChosenColor: "Platinum")
-
-myCar.drive()
-
 let mySelfDrivingCar = SelfDrivingCar()
+
+//mySelfDrivingCar.destination = "1 Hacker Way"  //HQ for facebook
+
 mySelfDrivingCar.drive()
 print(mySelfDrivingCar.color)
